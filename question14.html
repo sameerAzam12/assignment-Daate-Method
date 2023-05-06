@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Question 14</h1>")
+//      14. Write a program to generate your K-Electric bill in your
+// browser. All the amounts should be rounded off to 2
+// decimal places. Display the following fields:
+// a. Customer Name
+// b. Current Month
+// c. Number of units
+// d. Charges per unit
+// e. Net Amount Payable (within Due Date)
+// f. Late Payment Surcharge
+// g. Gross Amount Payable (after Due Date)
+// Where,
+
+
+
+
+     let nam = prompt("Enter Your name")
+     let currentmonth = prompt("Enter Month")
+     let units = Math.round(+prompt("Number of units"))*1
+     let chrge = 16;
+     
+     
+      console.log("Name:",nam)
+      console.log("Name:",currentmonth)
+      console.log("Number of units:",units)
+      console.log("charge per unit:",chrge)
+
+let lateCharge = 350;
+let amount = units*chrge;
+let lateamount = amount + lateCharge;
+
+
+
+ console.log("Net amount payable (within due date)", amount);
+ console.log("Net amount payable (after due date)", lateamount);
+
+
+
+    </script>
+</body>
+</html>

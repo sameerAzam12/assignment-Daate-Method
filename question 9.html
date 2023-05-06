@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+
+
+document.write("<h1>Question 9</h1>")
+
+var ramadanStart = new Date("June 18, 2015");
+
+
+var currentDate = new Date();
+
+
+var timeDifference = currentDate.getTime() - ramadanStart.getTime();
+
+
+var daysSinceRamadanStart = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+
+alert("Number of days past since 1st Ramadan: " + daysSinceRamadanStart);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// Write a program that displays in your browser the
+// seconds that elapsed between the reference date and the
+// beginning of 2015.
+document.write("<h1>Question 10</h1>")
+
+var reference= new Date("dec 5, 2015");
+
+
+var currentDate = new Date("jan 1, 2015");
+
+
+var timeDifference = reference.getTime() - currentDate.getTime();
+
+
+var secondsStart = Math.floor(timeDifference / (1000 * 60 ));
+
+
+alert(secondsStart +" seconds had passed since begining of 2015" );
+
+
+
+
+
+    </script>
+</body>
+</html>
